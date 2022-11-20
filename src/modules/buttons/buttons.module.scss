@@ -1,5 +1,7 @@
 .container {
     --orange: orange;
+    --hover-orange: rgb(224, 146, 0);
+    --active-orange: rgb(177, 115, 0);
     --grey: rgb(95, 95, 95);
     width: inherit;
     height: inherit;
@@ -15,14 +17,7 @@
         'zer zer dot equ'
     ;
 
-    &>* {
-        appearance: unset;
-        font-size: 25px;
-        color: white;
-        background-color: grey;
-        border-width: 0;
-        padding: 10px;
-    }
+
 
     .zero {
         grid-area: zer;
@@ -35,6 +30,7 @@
     .equals {
         grid-area: equ;
         background-color: var(--orange);
+
     }
 
     .one {
@@ -106,5 +102,26 @@
     .device {
         grid-area: dev;
         background-color: var(--orange);
+    }
+
+
+    &>* {
+        appearance: unset;
+        font-size: 25px;
+        color: white;
+        background-color: grey;
+        border-width: 0;
+        padding: 10px;
+        margin: 0;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            filter: brightness(110%);
+        }
+
+        &:active {
+            filter: blur(2px);
+        }
     }
 }
