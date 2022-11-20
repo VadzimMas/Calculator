@@ -19,7 +19,7 @@
 
     .zero {
         grid-area: zer;
-        border-bottom-left-radius: 18px;
+        border-bottom-left-radius: 20px;
     }
 
     .dot {
@@ -29,7 +29,7 @@
     .equals {
         grid-area: equ;
         background-color: var(--orange);
-        border-bottom-right-radius: 18px;
+        border-bottom-right-radius: 20px;
     }
 
     .one {
