@@ -1,0 +1,110 @@
+.container {
+    --orange: orange;
+    --grey: rgb(95, 95, 95);
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
+    grid-template-areas:
+        'ac  pm  per dev'
+        'sev eig nin mul'
+        'fou fiv six min'
+        'one two thr plu'
+        'zer zer dot equ'
+    ;
+
+    &>* {
+        appearance: unset;
+        font-size: 25px;
+        color: white;
+        background-color: grey;
+        border-width: 0;
+        padding: 10px;
+    }
+
+    .zero {
+        grid-area: zer;
+    }
+
+    .dot {
+        grid-area: dot;
+    }
+
+    .equals {
+        grid-area: equ;
+        background-color: var(--orange);
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: thr;
+    }
+
+    .plus {
+        grid-area: plu;
+        background-color: var(--orange);
+    }
+
+    .four {
+        grid-area: fou;
+    }
+
+    .five {
+        grid-area: fiv;
+    }
+
+    .six {
+        grid-area: six;
+    }
+
+    .minus {
+        grid-area: min;
+        background-color: var(--orange);
+    }
+
+    .seven {
+        grid-area: sev;
+    }
+
+    .eight {
+        grid-area: eig;
+    }
+
+    .nine {
+        grid-area: nin;
+    }
+
+    .multiply {
+        grid-area: mul;
+        background-color: var(--orange);
+    }
+
+    .AC {
+        grid-area: ac;
+        background-color: var(--grey);
+    }
+
+    .plusMinus {
+        grid-area: pm;
+        background-color: var(--grey);
+    }
+
+    .present {
+        grid-area: per;
+        background-color: var(--grey);
+    }
+
+    .device {
+        grid-area: dev;
+        background-color: var(--orange);
+    }
+}
