@@ -17,8 +17,6 @@
         'zer zer dot equ'
     ;
 
-
-
     .zero {
         grid-area: zer;
     }
@@ -103,7 +101,6 @@
         grid-area: dev;
         background-color: var(--orange);
     }
-
 
     &>* {
         appearance: unset;
